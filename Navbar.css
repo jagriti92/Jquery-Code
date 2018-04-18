@@ -1,0 +1,67 @@
+:root{
+  font-size: 16px;
+};
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100v%;
+  height: 100%;
+  background: url('./images/img2.jpg') 20% 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header{
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: grey;
+  font-family: cursive;
+  font-size: 3rem;
+  letter-spacing: .5rem;
+}
+nav{
+  text-align: center;
+  background-color: #0009;
+  box-shadow: 5px 10px;
+}
+ul.child{
+  display: none;
+
+}
+li{
+  list-style: none;
+}
+.parent{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+ul.parent>li{
+  padding: 2rem;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0 1rem;
+  line-height: 4rem;
+  color: grey;
+  transition: all 1s;
+}
+
+
+@media screen and (max-width: 550px){
+    .parent{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    ul.parent>li{
+        margin: 0;
+    }
+  header{
+    font-size: 2rem;
+    letter-spacing: 0;
+  }
+}

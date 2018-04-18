@@ -1,0 +1,117 @@
+:root{
+	font-size: 16px;
+};
+html,body{
+	width: 100vmax; 
+	height: 100%;
+	margin: 0;
+	padding: 0;
+
+}
+body{
+	height: 40vmax;
+	background: url('./images/img1.jpg') 60% 80%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: 6rem;
+	padding-top: 8rem;
+	
+}
+
+.aboutme{
+	font-size: 3.5rem;
+	text-decoration: none;
+	color: #0BA70B;
+	padding-left: 6rem;
+	cursor: pointer;
+}
+.aboutinterest{
+	font-size: 3.5rem;
+	text-decoration: none;
+	color:  blue;
+	padding-left: 30rem;
+	cursor: pointer;
+}
+.aboutworkexperience{
+	font-size: 3.5rem;
+	text-decoration: none;
+	color: #E00000;
+	padding-left: 48rem;
+	cursor: pointer;
+}
+.first{
+	border-style: dotted;
+	border-color: blue;
+	background-color:#FF0000 ;
+}
+.second{
+	border-style: dotted;
+	border-color: white;
+	background-color: #0496D5;
+}
+.third{
+	border-style: dotted;
+	border-color: blue;
+	background-color:#0BA70B ;
+}
+.moreText{
+	display: none;
+}
+#someTextAM{
+	font-family: cursive;
+	font-size: 2rem;
+	text-align: center;
+	color:#0C440C ;
+}
+#someTextAI{
+	font-family: cursive;
+	font-size: 2rem;
+	text-align: center;
+	color:#380ADB ;
+}
+#someTextAWE{
+	font-family: cursive;
+	font-size: 2rem;
+	text-align: center;
+	color:#760000 ;
+}
+
+@media screen and (max-width: 550px){
+	.aboutme, .aboutinterest, .aboutworkexperience{
+		font-size: 1.7rem;
+		padding-left: 0;
+	}
+	#someTextAM, #someTextAI, #someTextAWE{
+		font-size: 1rem;
+		text-align: left;
+	}
+}
+@media screen and (min-width: 550px) and (max-width: 980px){
+	.aboutme, .aboutinterest, .aboutworkexperience{
+		font-size: 2.2rem;
+	}
+	.aboutme{
+		padding-left: 20rem;
+	}
+	.aboutinterest{
+		padding-left: 21rem;
+	}
+	.aboutworkexperience{
+		padding-left: 17rem;
+	}
+	#someTextAM, #someTextAI, #someTextAWE{
+		font-size: 1.6rem;
+		text-align: center;
+	}
+}
+@media screen and (min-width: 980px) and (max-width: 1180px){
+	.aboutme{
+		padding-left: 6rem;
+	}
+	.aboutinterest{
+		padding-left: 20rem;
+	}
+	.aboutworkexperience{
+		padding-left: 30rem;
+	}
+}
